@@ -1,1 +1,1 @@
-# NextJs internationalization
+# NextJs internationalization and State Management

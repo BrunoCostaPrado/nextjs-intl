@@ -1,7 +1,8 @@
 {
 	"HomePage": {
 		"title": "Olá mundo!",
-		"about": "Vá para a página sobre"
+		"about": "Vá para a página sobre",
+		"contact": "Vá para a página de contato"
 	},
 	"About": {
 		"title": "Sobre nós"
@@ -10,5 +11,20 @@
 		"increment": "Incrementar",
 		"decrement": "Decrementar",
 		"reset": "Reiniciar"
+	},
+	"Dropdown": {
+		"language": "Escolha sua linguagem"
+	},
+	"contactForm": {
+		"Contact": "Contato",
+		"name": "Nome",
+		"email": "Email",
+		"message": "Mensagem",
+		"submit": "Enviar"
+	},
+	"validation": {
+		"invalid": "Email invalido",
+		"required": "Name obrigatório",
+		"min": "Mensagem precisa ter pelo menos 10 caracteres"
 	}
 }

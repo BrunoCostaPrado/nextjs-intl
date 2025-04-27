@@ -4,6 +4,7 @@
 	"private": true,
 	"type": "module",
 	"scripts": {
+		"act": "act -W '.github/workflows/'",
 		"build": "bun --bun next build",
 		"dev": "bun --bun next dev --turbo",
 		"lint": "biome check --write .",
@@ -13,24 +14,26 @@
 		"typecheck": "tsc --noEmit"
 	},
 	"dependencies": {
+		"@hookform/resolvers": "^5.0.1",
+		"@radix-ui/react-label": "^2.1.4",
+		"@radix-ui/react-select": "^2.2.2",
 		"@radix-ui/react-slot": "^1.2.0",
-		"@redbruno/isdev": "^1.0.2",
 		"@t3-oss/env-nextjs": "^0.13.0",
+		"babel-plugin-react-compiler": "^19.1.0-rc.1",
 		"class-variance-authority": "^0.7.1",
 		"clsx": "^2.1.1",
-		"framer-motion": "^12.9.2",
 		"jotai": "^2.12.3",
 		"lucide-react": "^0.503.0",
 		"next": "^15.3.1",
 		"next-intl": "^4.1.0",
 		"react": "^19.1.0",
 		"react-dom": "^19.1.0",
+		"react-hook-form": "^7.56.1",
 		"tailwind-merge": "^3.2.0",
 		"zod": "^3.24.3"
 	},
 	"devDependencies": {
 		"@biomejs/biome": "1.9.4",
-		"@builder.io/partytown": "^0.10.3",
 		"@tailwindcss/postcss": "^4.1.4",
 		"@total-typescript/ts-reset": "^0.6.1",
 		"@types/bun": "^1.2.10",

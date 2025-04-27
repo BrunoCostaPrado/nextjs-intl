@@ -1,7 +1,8 @@
 {
 	"HomePage": {
 		"title": "Hello world!",
-		"about": "Go to the about page"
+		"about": "Go to the about page",
+		"contact": "Go to the contact page"
 	},
 	"About": {
 		"title": "About us"
@@ -10,5 +11,20 @@
 		"increment": "Increment",
 		"decrement": "Decrement",
 		"reset": "Reset"
+	},
+	"Dropdown": {
+		"language": "Choose your language"
+	},
+	"contactForm": {
+		"Contact": "Contact",
+		"name": "Name",
+		"email": "Email",
+		"message": "Message",
+		"submit": "Submit"
+	},
+	"validation": {
+		"invalid": "Email invalid",
+		"required": "Name required",
+		"min": "Message required to be at least 10 characters"
 	}
 }

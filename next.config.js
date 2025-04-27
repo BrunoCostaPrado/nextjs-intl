@@ -7,11 +7,10 @@ import createNextIntlPlugin from "next-intl/plugin"
 
 /** @type {import("next").NextConfig} */
 const config = {
-	experimental: {
-		nextScriptWorkers: true,
-	},
+	// 		experimental: {
+	//     reactCompiler: true,
+	//   },
 }
 
 const withNextIntl = createNextIntlPlugin()
 export default withNextIntl(config)
-// export default config

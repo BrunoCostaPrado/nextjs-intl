@@ -1,7 +1,7 @@
 import "@/styles/globals.css"
 
+import NavBar from "@/components/NavBar"
 import { routing } from "@/i18n/routing"
-
 import type { Metadata } from "next"
 import { NextIntlClientProvider, hasLocale } from "next-intl"
 import { Geist } from "next/font/google"
@@ -35,7 +35,10 @@ export default async function LocaleLayout({
 		<html lang={locale} className={`${geist.variable}`}>
 			<body>
 				<main className="flex min-h-screen flex-col items-center justify-center bg-gradient-to-b from-[#2e026d] to-[#15162c] text-white">
-					<NextIntlClientProvider>{children}</NextIntlClientProvider>
+					<NextIntlClientProvider>
+						<NavBar />
+						{children}
+					</NextIntlClientProvider>
 				</main>
 			</body>
 		</html>

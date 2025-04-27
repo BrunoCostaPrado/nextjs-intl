@@ -10,6 +10,9 @@ export default async function HomePage() {
 				<Link href="/about" prefetch={true} className="p-2">
 					{t("about")}
 				</Link>
+				<Link href="/contact" prefetch={true} className="p-2">
+					{t("contact")}
+				</Link>
 				<Counter />
 			</div>
 		</main>
