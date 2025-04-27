@@ -1,12 +1,11 @@
 import "@/styles/globals.css"
-import { env } from "@/env"
+
 import { routing } from "@/i18n/routing"
-import { DevOnly } from "@redbruno/isdev"
+
 import type { Metadata } from "next"
 import { NextIntlClientProvider, hasLocale } from "next-intl"
 import { Geist } from "next/font/google"
 import { notFound } from "next/navigation"
-import Script from "next/script"
 
 export const metadata: Metadata = {
 	title: "Create T3 App",
@@ -34,15 +33,6 @@ export default async function LocaleLayout({
 
 	return (
 		<html lang={locale} className={`${geist.variable}`}>
-			<head>
-				<DevOnly isDev={env.NODE_ENV}>
-					<Script
-						crossOrigin="anonymous"
-						src="//unpkg.com/react-scan/dist/auto.global.js"
-						strategy="worker"
-					/>
-				</DevOnly>
-			</head>
 			<body>
 				<main className="flex min-h-screen flex-col items-center justify-center bg-gradient-to-b from-[#2e026d] to-[#15162c] text-white">
 					<NextIntlClientProvider>{children}</NextIntlClientProvider>

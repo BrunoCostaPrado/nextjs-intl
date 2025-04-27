@@ -5,5 +5,10 @@
 	},
 	"About": {
 		"title": "Sobre nós"
+	},
+	"Count": {
+		"increment": "Incrementar",
+		"decrement": "Decrementar",
+		"reset": "Reiniciar"
 	}
 }
